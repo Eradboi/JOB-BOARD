@@ -12,4 +12,3 @@ Project Stack
 -   Django
 -   Pillow
 -   PostgreSQL
--   Python
