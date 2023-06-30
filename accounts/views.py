@@ -33,10 +33,19 @@ def signup_view(request):
 class CompleteProfileView(View, LoginRequiredMixin):
     def get(self, request, *args, **kwargs):
         try:
-            get_user()
             context = {
-                'profile': get_user(),
+                'profile': get_user(request),
             }
             return render(self.request, 'registrations/complete_profile.html', context)
         except ObjectDoesNotExist:
             return HttpResponse(request, 'THIS USER HAS NO PROFILE')
+
+    def post(self, request, *args, **kwargs):
+        if request.method == "POST":
+            twitter = request.POST['twitter']
+            print(twitter)
+            user = get_user(request)
+            user.twitter=twitter
+            user.save()
+
+
