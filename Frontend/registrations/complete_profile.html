@@ -5,15 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-
-<h3>
-    COMPLETE YOUR PROFILE
-    COMPLETE YOUR PROFILE
+<h3>COMPLETE YOUR PROFILE
     <br>
     {{ profile.username }}
 </h3>
 
-<form method="post" action="{% url 'complete_profile' %}>
+<form method="POST" action="{% url 'complete_profile' %}">
   {% csrf_token %}
     <input type= "url"  id="twitter" name="twitter">
     <br>
