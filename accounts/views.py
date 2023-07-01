@@ -47,5 +47,6 @@ class CompleteProfileView(View, LoginRequiredMixin):
             user = get_user(request)
             user.twitter = twitter
             user.save()
+            return redirect('account_login')
 
 
