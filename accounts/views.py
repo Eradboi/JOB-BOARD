@@ -14,7 +14,7 @@ def get_user(request):
     return user
 
 def display_user_name(request):
-    return render (request, 'user.html')
+    return render(request, 'user.html')
 
 def signup_view(request):
     if request.method == 'POST':
@@ -45,7 +45,7 @@ class CompleteProfileView(View, LoginRequiredMixin):
             twitter = request.POST['twitter']
             print(twitter)
             user = get_user(request)
-            user.twitter=twitter
+            user.twitter = twitter
             user.save()
 
 
