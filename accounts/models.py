@@ -57,7 +57,7 @@ class User(AbstractUser):
     objects = CustomUserManager()
 
     USERNAME_FIELD = 'email'
-    # requred for creating user
+    # required for creating user
     REQUIRED_FIELDS = ['username',]
 
     class Meta:
