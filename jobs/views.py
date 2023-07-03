@@ -3,10 +3,12 @@ from django.http import HttpResponse
 from django.views.generic import *
 from django.views.generic.edit import CreateView
 from django.contrib.auth.mixins import LoginRequiredMixin
-from .models import Upload
-from .forms import JobUploadForm
+from .models import *
+from .forms import *
 from accounts.views import get_user
 # Create your views here.
+
+
 class UploadJobs(CreateView,LoginRequiredMixin):
         model = Upload
         form_class = JobUploadForm
