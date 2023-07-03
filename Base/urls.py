@@ -11,7 +11,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('', include('accounts.urls')),
-    path('', include('jobs.urls')),
+    path('', include('jobs.urls', namespace="jobs")),
 ]
 
 if settings.DEBUG:

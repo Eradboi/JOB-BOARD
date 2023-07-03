@@ -6,21 +6,22 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import *
 from .forms import *
 from accounts.views import get_user
+from django.urls import reverse_lazy, reverse
 # Create your views here.
 
 
-class UploadJobs(CreateView,LoginRequiredMixin):
+class UploadJobsView(CreateView, LoginRequiredMixin):
         model = Upload
         form_class = JobUploadForm
         template_name = 'jobs/upload.html'
-        success_url = '/job-list/'
+        success_url = reverse_lazy('jobs:jobs_list')
 
 
 
-class AllJobs(ListView, LoginRequiredMixin):
+class AllJobsView(ListView, LoginRequiredMixin):
         model = Upload
         template_name = 'jobs/list.html'
-        paginate_by = 3
+        paginate_by = 10
 
 
 
