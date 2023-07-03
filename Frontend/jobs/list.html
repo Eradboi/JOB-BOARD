@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Job Board | Job List{% endblock %}</title>
+    <style>
+        .center{
+            text-align:center;
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+    {% for all in object_list %}
+    <div class="center">
+        <h1>{{ all.Title }}</h1>
+        <hr>
+        <h2>{{ all.Description }}</h2>
+        <h4>Duration:  {{ all.Duration }}</h4>
+        <h4>Onsite:  {{ all.Onsite }}</h4>
+        <br>
+
+    </div>
+    {% endfor %}
+    <div class="center">
+        <div class="pagination">
+            <span class="step-links">
+                {% if page_obj.has_previous %}
+                    <a href="?page=1">&laquo; first</a>
+                    <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+        
+                <span class="current">
+                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                </span>
+        
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}">next</a>
+                    <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                {% endif %}
+            </span>
+        </div>
+    </div>
+    
+</body>
+</html>
