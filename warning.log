@@ -1,0 +1,68 @@
+django.utils.autoreload INFO 2023-07-04 22:02:57,798 autoreload 60252 4541003200 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:02:57,798 autoreload 60252 4541003200 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:06:49,548 autoreload 60252 4541003200 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/views.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:06:49,548 autoreload 60252 4541003200 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/views.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:06:51,539 autoreload 60301 4653299136 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:06:51,539 autoreload 60301 4653299136 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:07:31,941 autoreload 60301 4653299136 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/views.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:07:31,941 autoreload 60301 4653299136 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/views.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:07:33,660 autoreload 60318 4555158976 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:07:33,660 autoreload 60318 4555158976 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:10:36,283 autoreload 60318 4555158976 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/views.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:10:36,283 autoreload 60318 4555158976 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/views.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:10:37,880 autoreload 60381 4479264192 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:10:37,880 autoreload 60381 4479264192 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:10:51,632 autoreload 60381 4479264192 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/views.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:10:51,632 autoreload 60381 4479264192 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/views.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:10:53,136 autoreload 60386 4416988608 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:10:53,136 autoreload 60386 4416988608 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:20:25,390 autoreload 60386 4416988608 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/views.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:20:25,390 autoreload 60386 4416988608 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/views.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:20:27,039 autoreload 60535 4688770496 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:20:27,039 autoreload 60535 4688770496 Watching for file changes with StatReloader
+django.server INFO 2023-07-04 22:20:28,819 basehttp 60535 123145480323072 "GET / HTTP/1.1" 200 150
+django.server INFO 2023-07-04 22:20:28,819 basehttp 60535 123145480323072 "GET / HTTP/1.1" 200 150
+django.server INFO 2023-07-04 22:20:31,288 basehttp 60535 123145480323072 "GET / HTTP/1.1" 200 150
+django.server INFO 2023-07-04 22:20:31,288 basehttp 60535 123145480323072 "GET / HTTP/1.1" 200 150
+django.request WARNING 2023-07-04 22:20:53,430 log 60535 123145480323072 Not Found: /job-lists/
+django.request WARNING 2023-07-04 22:20:53,430 log 60535 123145480323072 Not Found: /job-lists/
+django.server WARNING 2023-07-04 22:20:53,430 basehttp 60535 123145480323072 "GET /job-lists/ HTTP/1.1" 404 3208
+django.server WARNING 2023-07-04 22:20:53,430 basehttp 60535 123145480323072 "GET /job-lists/ HTTP/1.1" 404 3208
+django.server INFO 2023-07-04 22:21:00,575 basehttp 60535 123145480323072 "GET /job-list/ HTTP/1.1" 200 2178
+django.server INFO 2023-07-04 22:21:00,575 basehttp 60535 123145480323072 "GET /job-list/ HTTP/1.1" 200 2178
+django.utils.autoreload INFO 2023-07-04 22:23:06,968 autoreload 60535 4688770496 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/Base/settings/base.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:23:06,968 autoreload 60535 4688770496 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/Base/settings/base.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:23:08,437 autoreload 60578 4556703168
+django.utils.autoreload INFO 2023-07-04 22:23:08,437 autoreload 60578 4556703168
+django.utils.autoreload INFO 2023-07-04 22:24:17,565 autoreload 60578 4556703168
+django.utils.autoreload INFO 2023-07-04 22:24:17,565 autoreload 60578 4556703168
+django.utils.autoreload INFO 2023-07-04 22:24:19,108 autoreload 60600 4699571648
+django.utils.autoreload INFO 2023-07-04 22:24:19,108 autoreload 60600 4699571648
+jobs.views WARNING 2023-07-04 22:24:39,372 views 60600 123145445003264
+django.server INFO 2023-07-04 22:24:39,397 basehttp 60600 123145445003264
+django.server INFO 2023-07-04 22:24:39,397 basehttp 60600 123145445003264
+django.utils.autoreload INFO 2023-07-04 22:24:56,508 autoreload 60600 4699571648
+django.utils.autoreload INFO 2023-07-04 22:24:56,508 autoreload 60600 4699571648
+django.utils.autoreload INFO 2023-07-04 22:24:57,870 autoreload 60613 4553184704 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:24:57,870 autoreload 60613 4553184704 Watching for file changes with StatReloader
+jobs.views WARNING 2023-07-04 22:25:13,346 views 60613 123145381715968 viewing all jobs
+django.server INFO 2023-07-04 22:25:13,373 basehttp 60613 123145381715968 "GET /job-list/ HTTP/1.1" 200 2178
+django.server INFO 2023-07-04 22:25:13,373 basehttp 60613 123145381715968 "GET /job-list/ HTTP/1.1" 200 2178
+django.utils.autoreload INFO 2023-07-04 22:25:46,607 autoreload 60613 4553184704 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/views.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:25:46,607 autoreload 60613 4553184704 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/views.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:25:48,177 autoreload 60638 4569085376 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:25:48,177 autoreload 60638 4569085376 Watching for file changes with StatReloader
+jobs.views INFO 2023-07-04 22:25:58,046 views 60638 123145532461056 viewing all jobs
+django.server INFO 2023-07-04 22:25:58,071 basehttp 60638 123145532461056 "GET /job-list/ HTTP/1.1" 200 2178
+django.server INFO 2023-07-04 22:25:58,071 basehttp 60638 123145532461056 "GET /job-list/ HTTP/1.1" 200 2178
+django.utils.autoreload INFO 2023-07-04 22:27:38,634 autoreload 60638 4569085376 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/models.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:27:38,634 autoreload 60638 4569085376 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/models.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:27:39,984 autoreload 60686 4405343680 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:27:39,984 autoreload 60686 4405343680 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:28:20,331 autoreload 60686 4405343680 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/views.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:28:20,331 autoreload 60686 4405343680 /Users/vbellotech/Desktop/PROJECTS/JOB BOARD/Base/jobs/views.py changed, reloading.
+django.utils.autoreload INFO 2023-07-04 22:28:21,767 autoreload 60699 4579354048 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-07-04 22:28:21,767 autoreload 60699 4579354048 Watching for file changes with StatReloader
+jobs.views INFO 2023-07-04 22:28:27,785 views 60699 123145546743808 adminvbello view all jobs
+django.server INFO 2023-07-04 22:28:27,804 basehttp 60699 123145546743808 "GET /job-list/ HTTP/1.1" 200 2178
+django.server INFO 2023-07-04 22:28:27,804 basehttp 60699 123145546743808 "GET /job-list/ HTTP/1.1" 200 2178
