@@ -1,9 +1,0 @@
-# created by virtualenv automatically
-
-
-venv/
-.env
-settings.py
-warning.log
-db.sqlite3
-.idea
