@@ -5,3 +5,5 @@ venv/
 .env
 settings.py
 warning.log
+db.sqlite3
+.idea
