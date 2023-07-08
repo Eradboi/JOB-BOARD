@@ -1,5 +1,6 @@
 from django.db import models
-
+from accounts.models import User
+from django.conf import settings
 
 
 # Create your models here.
@@ -29,3 +30,7 @@ class Upload(models.Model):
 
     def __str__(self):
         return f"{self.Title}"
+
+class Bookmark(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name="bookmarker",  on_delete=models.CASCADE)
+    jobs = models.ForeignKey('Upload', on_delete=models.CASCADE)

@@ -28,7 +28,7 @@ class AllJobsView(ListView, LoginRequiredMixin):
 
         def get(self, request, *args, **kwargs):
                 # do some logging
-                logger.info(f"{request.user} view all jobs")
+                logger.info(f"{request.user} viewed all jobs")
                 # return super which will run the default get() method for this class
                 return super().get(request, *args, **kwargs)
 
