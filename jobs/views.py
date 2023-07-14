@@ -13,16 +13,16 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-class UploadJobsView(CreateView, LoginRequiredMixin):
-        model = Upload
+class UploadJobView(CreateView, LoginRequiredMixin):
+        model = Jobpost
         form_class = JobUploadForm
         template_name = 'jobs/upload.html'
         success_url = reverse_lazy('jobs:jobs_list')
 
 
 
-class AllJobsView(ListView, LoginRequiredMixin):
-        model = Upload
+class AllJobsView(ListView):
+        model = Jobpost
         template_name = 'jobs/list.html'
         paginate_by = 10
 
@@ -31,6 +31,12 @@ class AllJobsView(ListView, LoginRequiredMixin):
                 logger.info(f"{request.user} viewed all jobs")
                 # return super which will run the default get() method for this class
                 return super().get(request, *args, **kwargs)
+
+        def get_queryset(self):
+                return Jobpost.objects.order_by('-created_at')
+
+class JobDetailView(DetailView, LoginRequiredMixin):
+
 
 
 

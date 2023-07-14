@@ -7,3 +7,6 @@ settings.py
 warning.log
 db.sqlite3
 .idea
+vb.txt
+
+jobs/migrations/*

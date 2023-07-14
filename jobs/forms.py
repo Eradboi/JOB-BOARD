@@ -1,8 +1,8 @@
 from django import forms
-from .models import Upload
+from .models import *
 
 class JobUploadForm(forms.ModelForm):
     class Meta:
-        model = Upload
-        fields = ('Title', 'Description','Duration','Type')
+        model = Jobpost
+        fields = ('Title', 'Description', 'Category','Type')
 
