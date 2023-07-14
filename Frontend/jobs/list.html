@@ -11,13 +11,14 @@
     </style>
 </head>
 <body>
-    {% for all in object_list %}
+    {% for all in jobs %}
     <div class="center">
         <h1>{{ all.Title }}</h1>
         <hr>
         <h2>{{ all.Description }}</h2>
         <h4>Duration:  {{ all.Duration }}</h4>
         <h4>Onsite:  {{ all.Type }}</h4>
+        <a href="{{ all.get_detail }}">Detail</a>
         <br>
 
     </div>

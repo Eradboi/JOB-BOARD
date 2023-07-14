@@ -24,6 +24,7 @@ class UploadJobView(CreateView, LoginRequiredMixin):
 class AllJobsView(ListView):
         model = Jobpost
         template_name = 'jobs/list.html'
+        context_object_name = "jobs"
         paginate_by = 10
 
         def get(self, request, *args, **kwargs):
@@ -36,6 +37,11 @@ class AllJobsView(ListView):
                 return Jobpost.objects.order_by('-created_at')
 
 class JobDetailView(DetailView, LoginRequiredMixin):
+        model = Jobpost
+        template_name = 'jobs/detail.html'
+
+
+
 
 
 

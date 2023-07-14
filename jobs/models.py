@@ -19,10 +19,10 @@ class Jobpost(models.Model):
         ('INTERNSHIP', 'INTERNSHIP'),
         ('CONTRACT', 'CONTRACT'),
     )
-    Description = models.CharField(max_length=200)
-    Title = models.CharField(max_length=50)
-    Type = models.CharField(max_length=200, blank =True, null=True, choices=TYPE_CHOICES)
-    Category = models.TextField(null=True, blank=False, choices=CATEGORY_CHOICES)
+    description = models.CharField(max_length=200)
+    title = models.CharField(max_length=50)
+    type = models.CharField(max_length=200, blank =True, null=True, choices=TYPE_CHOICES)
+    category = models.TextField(null=True, blank=False, choices=CATEGORY_CHOICES)
     created_at = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(default=create_slug_code())
 
