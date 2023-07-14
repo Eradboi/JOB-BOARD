@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Job Board | Job List{% endblock %}</title>
+    <style>
+        .center{
+            text-align:center;
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="center">
+        <h1>{{ object.title }}</h1>
+        <hr>
+        <h2>{{ object.description }}</h2>
+        <h4>Duration:  {{ object.category }}</h4>
+        <h4>Onsite:  {{ object.type }}</h4>
+        <br>
+
+    </div>
+
+</body>
+</html>
