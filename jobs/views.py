@@ -47,12 +47,12 @@ def add_bookmark(request, slug):
         try:
                 if Bookmark.objects.get(job=job, user=request.user):
                         messages.info(request, f"This job is in your bookmark")
-                        logger.info(f"{request.user} tried to add {job.title} (which already exist)to their bookmark")
+                        logger.info(f"user {request.user} tried to add {job.title} (which already exist)to their bookmark")
                         return redirect("jobs:jobs_list")
         except ObjectDoesNotExist:
                 Bookmark.objects.create(job=job, user=request.user)
                 messages.info(request, f"{job.title} has been added to your bookmarks")
-                logger.info(f"{request.user} added {job.title} to their bookmark")
+                logger.info(f"user {request.user} added {job.title} to their bookmark")
                 return redirect("/")
 
 
