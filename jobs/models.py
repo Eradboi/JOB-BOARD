@@ -32,11 +32,17 @@ class Jobpost(models.Model):
     def get_detail(self):
         return reverse("jobs:job_detail", kwargs={
             'slug': self.slug,
-            'title':self.Title,
+            'title':self.title,
         })
+
+    def add_bookmark(self):
+        return reverse("jobs:add_bookmark", kwargs={
+            'slug': self.slug,
+        })
+
     def __str__(self):
-        return f"{self.Title}"
+        return f"{self.title}"
 
 class Bookmark(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name="bookmarker",  on_delete=models.CASCADE)
-    jobs = models.ForeignKey('Jobpost', on_delete=models.CASCADE)
+    job = models.ForeignKey('Jobpost', on_delete=models.CASCADE)

@@ -1,5 +1,5 @@
-from django.shortcuts import render, redirect
-from django.http import HttpResponse
+from django.shortcuts import render, redirect, get_object_or_404
+from django.http import HttpResponse, HttpResponseRedirect
 from django.views.generic import *
 from django.views.generic.edit import CreateView
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -8,6 +8,8 @@ from .forms import *
 from accounts.views import get_user
 from django.urls import reverse_lazy, reverse
 import logging
+from django.contrib import messages
+from django.core.exceptions import ObjectDoesNotExist
 
 # Create your views here.
 
@@ -39,6 +41,21 @@ class AllJobsView(ListView):
 class JobDetailView(DetailView, LoginRequiredMixin):
         model = Jobpost
         template_name = 'jobs/detail.html'
+
+def add_bookmark(request, slug):
+        job = get_object_or_404(Jobpost, slug=slug)
+        try:
+                if Bookmark.objects.get(job=job, user=request.user):
+                        messages.info(request, f"This job is in your bookmark")
+                        logger.info(f"{request.user} tried to add {job.title} (which already exist)to their bookmark")
+                        return redirect("jobs:jobs_list")
+        except ObjectDoesNotExist:
+                Bookmark.objects.create(job=job, user=request.user)
+                messages.info(request, f"{job.title} has been added to your bookmarks")
+                logger.info(f"{request.user} added {job.title} to their bookmark")
+                return redirect("/")
+
+
 
 
 
