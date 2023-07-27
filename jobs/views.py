@@ -63,7 +63,6 @@ class UserBookmarkView(ListView):
         model = Bookmark
         template_name = 'jobs/bookmark.html'
         context_object_name = "bookmarks"
-        paginate_by = 10
 
         def get(self, request, *args, **kwargs):
                 # do some logging
