@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{% block title %}Job Board | Job List{% endblock %}</title>
-    <style>
-        .center{
-            text-align:center;
-            margin: 100px;
-        }
-    </style>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Job Board | Job List{% endblock %}
+
+{% block body %}
     {% for all in jobs %}
     <div class="center">
         <h1>{{ all.title }}</h1>
@@ -41,6 +33,5 @@
             </span>
         </div>
     </div>
-    
-</body>
-</html>
+
+{% endblock body %}}
