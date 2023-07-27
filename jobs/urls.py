@@ -10,4 +10,6 @@ urlpatterns = [
     path('job-list/', AllJobsView.as_view(), name='jobs_list'),
     path('job-detail/<str:title>/<str:slug>/', JobDetailView.as_view(), name="job_detail"),
     path('bookmark/add/<str:slug>/', add_bookmark, name="add_bookmark"),
+    path('bookmark/delete/<int:pk>/', delete_bookmark, name="delete_bookmark"),
+    path('bookmark-list/', UserBookmarkView.as_view(), name='user_bookmarks'),
 ]

@@ -40,9 +40,16 @@ class Jobpost(models.Model):
             'slug': self.slug,
         })
 
+
+
     def __str__(self):
         return f"{self.title}"
 
 class Bookmark(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name="bookmarker",  on_delete=models.CASCADE)
     job = models.ForeignKey('Jobpost', on_delete=models.CASCADE)
+
+    def delete_bookmark(self):
+        return reverse("jobs:delete_bookmark", kwargs={
+            'pk': self.pk,
+        })

@@ -55,8 +55,24 @@ def add_bookmark(request, slug):
                 logger.info(f"user {request.user} added {job.title} to their bookmark")
                 return redirect("/")
 
+def delete_bookmark(request, pk):
+        get_object_or_404(Bookmark, pk=pk).delete()
+        return redirect('/')
 
+class UserBookmarkView(ListView):
+        model = Bookmark
+        template_name = 'jobs/bookmark.html'
+        context_object_name = "bookmarks"
+        paginate_by = 10
 
+        def get(self, request, *args, **kwargs):
+                # do some logging
+                logger.info(f"user {request.user} viewed all their bookmarks")
+                # return super which will run the default get() method for this class
+                return super().get(request, *args, **kwargs)
+
+        def get_queryset(self):
+                return Bookmark.objects.filter(user=self.request.user)
 
 
 
